@@ -26,8 +26,8 @@ class HomeViewController: UIViewController {
         fetchBusses()
         scheduledTimerWithTimeInterval()
         
-        lattitude = locationManger?.location?.coordinate.latitude ?? 28.545625199086384
-        longitude = locationManger?.location?.coordinate.longitude ?? 77.27303899510929
+        lattitude = locationManger?.location?.coordinate.latitude ?? 0
+        longitude = locationManger?.location?.coordinate.longitude ?? 0
     }
     
     func configureMapView() {
@@ -38,14 +38,16 @@ class HomeViewController: UIViewController {
         
         mapView.delegate = self
         
+        mapView.userTrackingMode = .follow
+        
     }
     
     func fetchBusses(){
         
         print("Fetching nearby busses")
         
-        lattitude = locationManger?.location?.coordinate.latitude ?? 28.545625199086384
-        longitude = locationManger?.location?.coordinate.longitude ?? 77.27303899510929
+        lattitude = locationManger?.location?.coordinate.latitude ?? 0
+        longitude = locationManger?.location?.coordinate.longitude ?? 0
         
         homeViewModel.fetchNearbyBusLocations(lattitude: lattitude, longitude: longitude) { [weak self] in
             
@@ -66,7 +68,14 @@ class HomeViewController: UIViewController {
     
     @objc func fetchBusLocations(){
         DispatchQueue.main.async {
-            self.homeViewModel.fetchNearbyBusLocations(lattitude: self.lattitude, longitude: self.longitude) {}
+            self.homeViewModel.fetchNearbyBusLocations(lattitude: self.lattitude, longitude: self.longitude) { [weak self] in
+                if let annotations = self?.homeViewModel.newAnnotations {
+                    for annotation in annotations {
+                        self!.mapView.addAnnotation(annotation)
+                    }
+                    
+                }
+            }
         }
     }
 
