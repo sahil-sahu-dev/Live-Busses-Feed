@@ -17,10 +17,21 @@ class HomeViewModel {
     var newAnnotations = [DriverAnnotation]()
     private var prevBusses = [Bus]()
     
+    
     //MARK: Intents
     
-    func fetchNearbyBusLocations(completion: @escaping () -> ()){
+    func fetchNearbyBusLocations(lattitude: Double, longitude: Double ,completion: @escaping () -> ()){
         
+        NetworkService.shared.fetchNearbyBusses(device_id: "test_user", lattitude: latitude, longitude: longitude) { res in
+            switch res{
+            case .success(let busses):
+                print(busses)
+               
+            case .failure(let error):
+                print(error)
+             
+            }
+        }
     }
     
     

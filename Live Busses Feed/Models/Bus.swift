@@ -8,8 +8,8 @@
 import Foundation
 
 struct Bus: Codable {
-    let ac: BusType
-    let agency: BusAgency
+    let ac: String
+    let agency: String
     let id: String
     let lat, lng: Double
     let location: Location
@@ -17,32 +17,15 @@ struct Bus: Codable {
     let timestamp: Double
 }
 
-enum BusType: String, Codable {
-    case nac = "nac"
-    case ac = "ac"
-}
-
-enum BusAgency: String, Codable {
-    case dimts = "DIMTS"
-    case dtc = "DTC"
-}
 
 
 struct Location: Codable {
-    let reqlType: ReqlType
+    let reqlType: String
     let coordinates: [Double]
-    let type: TypeEnum
+    let type: String
 
     enum CodingKeys: String, CodingKey {
         case reqlType = "$reql_type$"
         case coordinates, type
     }
-}
-
-enum ReqlType: String, Codable {
-    case geometry = "GEOMETRY"
-}
-
-enum TypeEnum: String, Codable {
-    case point = "Point"
 }
