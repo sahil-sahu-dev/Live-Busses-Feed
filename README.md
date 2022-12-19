@@ -16,9 +16,9 @@ Each bus is marked with its bus number. There are 4 type of busses. They are cat
 * Swift
 
 ## How it works 🧐
-* When the coordinates for an annotation changes, update them on the map an animate the change.
+* When the coordinates for an annotation changes, update them on the map and animate the change.
 * If in our latest nearby busses response, there is a bus which was on screen but is not in the response, remove it from the map.
-* If a new bus comes which isnt on the map already, 
+* If a new bus comes which isnt on the map already, add it to the map.
 
 
 ## Recording 📹
