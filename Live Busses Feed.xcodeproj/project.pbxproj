@@ -21,6 +21,7 @@
 		B21A6AC229504F1E006F283B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AC129504F1E006F283B /* NetworkService.swift */; };
 		B21A6ADE29505380006F283B /* Live_Busses_Feed_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6ADD29505380006F283B /* Live_Busses_Feed_Tests.swift */; };
 		B21A6AE529505F63006F283B /* BusAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AE429505F63006F283B /* BusAnnotationView.swift */; };
+		B238D5CF295093FD0046980F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238D5CE295093FD0046980F /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B21A6ADB29505380006F283B /* Live Busses Feed_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Live Busses Feed_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21A6ADD29505380006F283B /* Live_Busses_Feed_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_Busses_Feed_Tests.swift; sourceTree = "<group>"; };
 		B21A6AE429505F63006F283B /* BusAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnnotationView.swift; sourceTree = "<group>"; };
+		B238D5CE295093FD0046980F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		B21A6A9E29504A53006F283B /* Live Busses Feed */ = {
 			isa = PBXGroup;
 			children = (
+				B238D5CD295093E90046980F /* Extentions */,
 				B21A6AB629504BBF006F283B /* ViewControllers */,
 				B21A6AB529504BB8006F283B /* Views */,
 				B21A6AB429504BB1006F283B /* ViewModels */,
@@ -148,6 +151,14 @@
 				B21A6ADD29505380006F283B /* Live_Busses_Feed_Tests.swift */,
 			);
 			path = "Live Busses Feed_Tests";
+			sourceTree = "<group>";
+		};
+		B238D5CD295093E90046980F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				B238D5CE295093FD0046980F /* UIColor.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				B21A6AE529505F63006F283B /* BusAnnotationView.swift in Sources */,
 				B21A6AC229504F1E006F283B /* NetworkService.swift in Sources */,
 				B21A6AA029504A53006F283B /* AppDelegate.swift in Sources */,
+				B238D5CF295093FD0046980F /* UIColor.swift in Sources */,
 				B21A6AA229504A53006F283B /* SceneDelegate.swift in Sources */,
 				B21A6AC029504D10006F283B /* Bus.swift in Sources */,
 				B21A6ABA29504C5C006F283B /* BusAnnotation.swift in Sources */,

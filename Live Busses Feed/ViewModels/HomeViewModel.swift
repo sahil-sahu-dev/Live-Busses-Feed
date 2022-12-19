@@ -67,7 +67,7 @@ class HomeViewModel {
             
             if !annotation_exists {
                 //add annotation
-                let newAnnotation = BusAnnotation(id: bus.id, coordinate: CLLocationCoordinate2D(latitude: bus.lat, longitude: bus.lng))
+                let newAnnotation = BusAnnotation(id: bus.id, coordinate: CLLocationCoordinate2D(latitude: bus.lat, longitude: bus.lng), agency: bus.agency, busType: bus.ac)
                 
                 busAnnotations.append(newAnnotation) //append to driver annotations
                 

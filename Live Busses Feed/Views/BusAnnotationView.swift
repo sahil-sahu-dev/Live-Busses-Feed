@@ -10,8 +10,9 @@ import MapKit
 
 class BusAnnotationView: MKAnnotationView {
 
-    private let annotationFrame = CGRect(x: 0, y: 0, width: 20, height: 20)
-    let label: UILabel
+    private let annotationFrame = CGRect(x: 0, y: 0, width: 70, height: 20)
+    var label: UILabel
+  
     
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         self.label = UILabel(frame: annotationFrame)
@@ -19,7 +20,7 @@ class BusAnnotationView: MKAnnotationView {
         self.frame = annotationFrame
         self.label.textColor = .white
         self.label.textAlignment = .center
-        self.backgroundColor = .blue
+        self.label.font = .systemFont(ofSize: 10, weight: .bold)
         self.addSubview(label)
     }
     
