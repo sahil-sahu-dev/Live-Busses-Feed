@@ -14,12 +14,13 @@
 		B21A6AA929504A54006F283B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21A6AA829504A54006F283B /* Assets.xcassets */; };
 		B21A6AAC29504A54006F283B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21A6AAA29504A54006F283B /* LaunchScreen.storyboard */; };
 		B21A6AB829504C44006F283B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AB729504C44006F283B /* LocationManager.swift */; };
-		B21A6ABA29504C5C006F283B /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AB929504C5C006F283B /* DriverAnnotation.swift */; };
+		B21A6ABA29504C5C006F283B /* BusAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AB929504C5C006F283B /* BusAnnotation.swift */; };
 		B21A6ABC29504C73006F283B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6ABB29504C73006F283B /* Constants.swift */; };
 		B21A6ABE29504CBC006F283B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6ABD29504CBC006F283B /* HomeViewModel.swift */; };
 		B21A6AC029504D10006F283B /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6ABF29504D10006F283B /* Bus.swift */; };
 		B21A6AC229504F1E006F283B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AC129504F1E006F283B /* NetworkService.swift */; };
 		B21A6ADE29505380006F283B /* Live_Busses_Feed_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6ADD29505380006F283B /* Live_Busses_Feed_Tests.swift */; };
+		B21A6AE529505F63006F283B /* BusAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A6AE429505F63006F283B /* BusAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +43,14 @@
 		B21A6AAB29504A54006F283B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B21A6AAD29504A54006F283B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B21A6AB729504C44006F283B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		B21A6AB929504C5C006F283B /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
+		B21A6AB929504C5C006F283B /* BusAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnnotation.swift; sourceTree = "<group>"; };
 		B21A6ABB29504C73006F283B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B21A6ABD29504CBC006F283B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B21A6ABF29504D10006F283B /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		B21A6AC129504F1E006F283B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B21A6ADB29505380006F283B /* Live Busses Feed_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Live Busses Feed_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21A6ADD29505380006F283B /* Live_Busses_Feed_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_Busses_Feed_Tests.swift; sourceTree = "<group>"; };
+		B21A6AE429505F63006F283B /* BusAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B21A6AB729504C44006F283B /* LocationManager.swift */,
-				B21A6AB929504C5C006F283B /* DriverAnnotation.swift */,
+				B21A6AB929504C5C006F283B /* BusAnnotation.swift */,
 				B21A6ABB29504C73006F283B /* Constants.swift */,
 				B21A6ABF29504D10006F283B /* Bus.swift */,
 			);
@@ -127,6 +129,7 @@
 		B21A6AB529504BB8006F283B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B21A6AE429505F63006F283B /* BusAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,11 +255,12 @@
 				B21A6AA429504A53006F283B /* HomeViewController.swift in Sources */,
 				B21A6ABE29504CBC006F283B /* HomeViewModel.swift in Sources */,
 				B21A6ABC29504C73006F283B /* Constants.swift in Sources */,
+				B21A6AE529505F63006F283B /* BusAnnotationView.swift in Sources */,
 				B21A6AC229504F1E006F283B /* NetworkService.swift in Sources */,
 				B21A6AA029504A53006F283B /* AppDelegate.swift in Sources */,
 				B21A6AA229504A53006F283B /* SceneDelegate.swift in Sources */,
 				B21A6AC029504D10006F283B /* Bus.swift in Sources */,
-				B21A6ABA29504C5C006F283B /* DriverAnnotation.swift in Sources */,
+				B21A6ABA29504C5C006F283B /* BusAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,8 @@
 				DEVELOPMENT_TEAM = YLHT46ZLDT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Live Busses Feed/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to your location.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,6 +455,8 @@
 				DEVELOPMENT_TEAM = YLHT46ZLDT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Live Busses Feed/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to your location.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

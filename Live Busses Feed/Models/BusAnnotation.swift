@@ -8,16 +8,16 @@
 import Foundation
 import MapKit
 
-class DriverAnnotation: NSObject, MKAnnotation {
+class BusAnnotation: NSObject, MKAnnotation {
     @objc dynamic var coordinate: CLLocationCoordinate2D
-    var uid: String
+    var id: String
     
     static let identifier = "DriverAnnotation"
     
-    init(uid: String, coordinate: CLLocationCoordinate2D) {
+    init(id: String, coordinate: CLLocationCoordinate2D) {
         
         self.coordinate = coordinate
-        self.uid = uid
+        self.id = id
     }
     
     
